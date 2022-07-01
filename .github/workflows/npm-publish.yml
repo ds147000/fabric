@@ -30,8 +30,8 @@ jobs:
           node-version: 12
           registry-url: https://registry.npmjs.org/
       - run: |
-          git config --local user.email "fupenglxy@gmail.com"
-          git config --local user.name "fupengl"
+          git config --local user.email "yangzhoulong@icloud.com"
+          git config --local user.name "yangzhoulong"
       - run: npm i
       - run: npm run release
       - run: npm publish

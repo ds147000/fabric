@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 0.0.4 (2022-07-04)
+
+
+### Bug Fixes
+
+* 修复prettier 配置问题 ([e196ee1](https://github.com/ds147000/fabric/commit/e196ee13ee047f983133866fa0ae2a7a684700c7))
+
 ### 0.0.94 (2022-06-18)
 
 

@@ -5,5 +5,4 @@ module.exports = {
     lint: eslint,
   }
 };
-
 exports.prettier = require('./prettier')

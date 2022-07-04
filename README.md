@@ -1,6 +1,6 @@
 # fabric
 
-> `prettier`，`eslint`，`stylelint` commonly used configuration files.
+> `prettier`，`eslint` commonly used configuration files.
 
 ## Usage
 

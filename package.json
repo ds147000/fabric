@@ -1,12 +1,12 @@
 {
-  "name": "ds-fabric",
-  "version": "0.0.1",
+  "name": "eslint-plugin-ds-fabric",
+  "version": "0.0.2",
   "description": "code style",
-  "main": "dist/index.js",
+  "main": "src/index.js",
   "scripts": {
     "release": "npx standard-version -a",
     "release:alpha": "npm run release -- --prerelease alpha",
-    "prepare": "tsc",
+    "prepare": "",
     "lint:fix": "eslint --fix --ext js,ts src",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -20,7 +20,6 @@
   "keywords": [
     "eslint",
     "prettier",
-    "stylelint",
     "eslint-config-react-app"
   ],
   "author": "fupeng",
@@ -35,17 +34,10 @@
     "eslint-config-prettier": "^8.5.0",
     "eslint-config-react-app": "^7.0.1",
     "eslint-plugin-prettier": "^4.0.0",
-    "stylelint-config-css-modules": "^4.1.0",
-    "stylelint-config-prettier": "^9.0.3",
-    "stylelint-config-rational-order": "^0.0.4",
-    "stylelint-config-standard": "^25.0.0",
-    "stylelint-declaration-block-no-ignored-properties": "^2.5.0"
+    "prettier": "*"
   },
   "peerDependencies": {
-    "eslint": "*",
-    "prettier": "*",
-    "stylelint": "*",
-    "stylelint-order": "*"
+    "eslint": "*"
   },
   "devDependencies": {
     "@types/node": "^14.18.21",
@@ -56,13 +48,6 @@
     "eslint-config-react-app": "7.0.1",
     "eslint-plugin-prettier": "4.0.0",
     "prettier": "^2.6.2",
-    "stylelint": "^14.6.1",
-    "stylelint-config-css-modules": "^4.1.0",
-    "stylelint-config-prettier": "^9.0.3",
-    "stylelint-config-rational-order": "^0.0.4",
-    "stylelint-config-standard": "^25.0.0",
-    "stylelint-declaration-block-no-ignored-properties": "^2.5.0",
-    "stylelint-order": "^5.0.0",
     "typescript": "^4.0.2"
   },
   "publishConfig": {

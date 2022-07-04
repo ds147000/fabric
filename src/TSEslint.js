@@ -1,4 +1,4 @@
-export default {
+module.exports = {
   '@typescript-eslint/no-use-before-define': [
     2,
     { functions: false, classes: true, variables: true, typedefs: true },

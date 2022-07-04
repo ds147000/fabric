@@ -1,19 +1,15 @@
-import path from 'path';
-import fs from 'fs';
+const tsConfig = require('./TSEslint');
 
-import tsConfig from './TSEslint';
-
-const isTsProject = fs.existsSync(path.join(process.cwd() || '.', './tsconfig.json'));
 
 // apply eslint-config-react-app env
 if (!process.env.NODE_ENV) {
   process.env.NODE_ENV = 'production';
 }
 
-export default {
+module.exports = {
   extends: [
     'react-app',
-    isTsProject && 'plugin:@typescript-eslint/eslint-recommended',
+    'plugin:@typescript-eslint/eslint-recommended',
     'plugin:prettier/recommended',
     'prettier',
   ].filter(Boolean),
@@ -32,7 +28,7 @@ export default {
     'prefer-promise-reject-errors': [2, { allowEmptyReject: true }],
     'no-else-return': [2, { allowElseIf: false }],
     'import/no-anonymous-default-export': 0,
-    ...(isTsProject ? tsConfig : {}),
+    ...tsConfig,
   },
   settings: {
     react: {

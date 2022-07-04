@@ -19,7 +19,7 @@
   ],
   "publishConfig": {
     "access": "public",
-    "registry": "http://npm.pinquest.cn"
+    "registry": "https://registry.npmjs.org"
   },
   "keywords": [
     "eslint",

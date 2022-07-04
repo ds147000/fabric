@@ -1,4 +1,5 @@
 const tsConfig = require('./TSEslint');
+const prettier = require('./prettier');
 
 
 // apply eslint-config-react-app env
@@ -12,7 +13,7 @@ module.exports = {
     'plugin:@typescript-eslint/eslint-recommended',
     'plugin:prettier/recommended',
     'prettier',
-  ].filter(Boolean),
+  ],
   env: {
     browser: true,
     node: true,
@@ -21,13 +22,22 @@ module.exports = {
     jest: true,
     jasmine: true,
   },
-  plugins: ['prettier'].filter(Boolean),
+  plugins: ['prettier'],
   rules: {
     'no-void': 0,
     'no-empty': [2, { allowEmptyCatch: true }],
     'prefer-promise-reject-errors': [2, { allowEmptyReject: true }],
     'no-else-return': [2, { allowElseIf: false }],
     'import/no-anonymous-default-export': 0,
+    "prettier/prettier": [
+      "error",
+      prettier,
+      {
+        "fileInfoOptions": {
+          "withNodeModules": true
+        }
+      }
+    ],
     ...tsConfig,
   },
   settings: {
